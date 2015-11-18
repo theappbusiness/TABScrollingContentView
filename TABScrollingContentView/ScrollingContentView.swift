@@ -30,12 +30,12 @@ import TABSwiftLayout
 *  A scrolling content view that respects the auto-layout constraints of its subviews and resizes its content view
 *  and the content size of its scrollable area accordingly.
 */
-class ScrollingContentView: UIView {
+public class ScrollingContentView: UIView {
 
   // MARK: Public properties
   
   /// The delegate of the underlying scroll view.
-  weak var delegate: UIScrollViewDelegate? {
+  public weak var delegate: UIScrollViewDelegate? {
     get {
       return scrollView.delegate
     }
@@ -45,7 +45,7 @@ class ScrollingContentView: UIView {
   }
   
   /// The content view, to which you should add subviews. Don't add subviews directly to the scroll view.
-  let contentView: UIView
+  public let contentView: UIView
   
   private let scrollView: UIScrollView
   

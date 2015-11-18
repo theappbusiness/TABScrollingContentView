@@ -26,11 +26,11 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import UIKit
 import TABSwiftLayout
 
-extension UIView {
+public extension UIView {
   
   // MARK: - Vertical
   
-  func addVerticalSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), verticalSpacing: Double = 0) {
+  public func addVerticalSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), verticalSpacing: Double = 0) {
     var previousView: UIView? = nil
     for subview in subviews {
       subview.translatesAutoresizingMaskIntoConstraints = false
@@ -52,7 +52,7 @@ extension UIView {
   
   // MARK: - Horizontal
   
-  func addHorizontalSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), verticalSpacing: Double = 0) {
+  public func addHorizontalSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), verticalSpacing: Double = 0) {
     var previousView: UIView? = nil
     for subview in subviews {
       subview.translatesAutoresizingMaskIntoConstraints = false
