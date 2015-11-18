@@ -3,7 +3,7 @@
 This library provides two scrolling content views:
 
 * `VerticalScrollingContentView`
-* `HorizontalScrolingContentView`
+* `HorizontalScrollingContentView`
 
 The useful thing about these views is that they infer their content size based on the subviews that are added (to the `contentView` property). As long as all of the subviews have a size defined by auto layout and the `contentView` can infer its size from the auto layout constraints between its subviews and itself.
 
@@ -13,7 +13,7 @@ Included is also a really simple way to add a set of vertical subviews or horizo
 
 The best way to instantiate a scrolling content view is by setting the custom class in Interface Builder to either `VerticalScrollingContentView` or `HorizontalScrollingContentView`.
 
-You can also use `init?(coder aDecoder: NSCoder)` and `init(frame: CGRect)`.
+You can also use `init?(coder:)` and `init(frame:)`.
 
 ## Populating
 
