@@ -52,12 +52,12 @@ public extension UIView {
   
   // MARK: - Horizontal
   
-  public func addHorizontalSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), verticalSpacing: Double = 0) {
+  public func addHorizontalSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), horizontalSpacing: Double = 0) {
     var previousView: UIView? = nil
     for subview in subviews {
       subview.translatesAutoresizingMaskIntoConstraints = false
       self.addSubview(subview)
-      addConstraintsFromView(subview, previousView: previousView, margins: margins, horizontalSpacing: verticalSpacing)
+      addConstraintsFromView(subview, previousView: previousView, margins: margins, horizontalSpacing: horizontalSpacing)
       previousView = subview
     }
     previousView?.pin(.Right, toEdge: .Right, ofView: self, margin: margins.right)

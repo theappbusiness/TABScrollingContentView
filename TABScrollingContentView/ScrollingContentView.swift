@@ -37,6 +37,18 @@ enum ScrollDirection {
  */
 public class HorizontalScrollingContentView: VerticalScrollingContentView {
   override class var scrollDirection: ScrollDirection { return .Horizontal }
+  
+  /**
+   Adds all the given subviews to the contentView, horizontally one after the other spaced accordingly.
+   
+   - parameter subviews: The views to add as subviews of the contentView.
+   - parameter margins:  The margins for the left of the first subview, the right of the last subview and the top and bottom
+   of all subviews.
+   - parameter viewSpacing: The vertical spacing between each subview.
+   */
+  override public func addSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
+    contentView.addHorizontalSubviews(subviews, withMargins: margins, horizontalSpacing: viewSpacing)
+  }
 }
 
 /**
@@ -79,6 +91,20 @@ public class VerticalScrollingContentView: UIView {
     contentView = VerticalScrollingContentView.newContentView()
     super.init(frame: frame)
     setupInitialConstraints()
+  }
+  
+  // MARK: Populating
+  
+  /**
+   Adds all the given subviews to the contentView, vertically one after the other spaced accordingly.
+  
+   - parameter subviews: The views to add as subviews of the contentView.
+   - parameter margins:  The margins for the top of the first subview, the bottom of the last subview and the left and right
+   of all subviews.
+   - parameter viewSpacing: The vertical spacing between each subview.
+   */
+  public func addSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
+    contentView.addVerticalSubviews(subviews, withMargins: margins, verticalSpacing: viewSpacing)
   }
   
   // MARK: Private
