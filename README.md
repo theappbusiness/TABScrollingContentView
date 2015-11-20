@@ -1,3 +1,5 @@
+![The App Business](https://github.com/theappbusiness/TABScrollingContentView/blob/master/assets/logo.png)
+
 # Scrolling Content View
 
 A simple way of adding content views to a scroll view, such that the scroll view's content size is determined automatically based on the auto layout constraints of its subviews.
