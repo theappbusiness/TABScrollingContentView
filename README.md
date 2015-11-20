@@ -4,6 +4,8 @@
 
 A simple way of adding content views to a scroll view, such that the scroll view's content size is determined automatically based on the auto layout constraints of its subviews.
 
+This is similar to a `UIStackView` in that its subviews will layout nicely in a horizontal or vertical direction, but it supports scrolling content.
+
 ## Included in the Library
 
 This library provides two scrolling content views:
