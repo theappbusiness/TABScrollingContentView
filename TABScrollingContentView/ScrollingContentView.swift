@@ -59,6 +59,9 @@ public class VerticalScrollingContentView: UIView {
 
   // MARK: Public properties
   
+  /// The scroll view created and owned by the VerticalScrollingContentView. NOTE: you should never add subviews to this directly, this should instead be handled by the addSubviews(subviews: [UIView], _ , _ ) on the instance of VerticalScrollingContentView.
+  let scrollView: UIScrollView
+  
   /// The delegate of the underlying scroll view.
   public weak var delegate: UIScrollViewDelegate? {
     get {
@@ -75,7 +78,6 @@ public class VerticalScrollingContentView: UIView {
   // MARK: Private properties
   
   class var scrollDirection: ScrollDirection { return .Vertical }
-  private let scrollView: UIScrollView
   
   // MARK: - Initialization
   
@@ -141,7 +143,6 @@ public class VerticalScrollingContentView: UIView {
     scrollView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
     scrollView.translatesAutoresizingMaskIntoConstraints = false
     scrollView.alwaysBounceVertical = true
-    scrollView.showsVerticalScrollIndicator = false
     return scrollView
   }
   
