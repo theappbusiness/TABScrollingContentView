@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'TABScrollingContentView'
-  s.version      = '1.0'
+  s.version      = '1.1'
   s.platform	 = :ios, '8.0'
   s.license      = 'MIT'
   s.author       = { "The App Business" => "https://www.theappbusiness.com" }
@@ -11,4 +11,3 @@ Pod::Spec.new do |s|
   s.source_files = 'TABScrollingContentView/**/*.swift'
   s.dependency 'TABSwiftLayout', '1.0'
 end
-
