@@ -59,7 +59,7 @@ public class VerticalScrollingContentView: UIView {
 
   // MARK: Public properties
   
-  /// The scroll view created and owned by the VerticalScrollingContentView. NOTE: you should never add subviews to this directly, this should instead be handled by the addSubviews(subviews: [UIView], _ , _ ) on the instance of VerticalScrollingContentView.
+  /// The scroll view created and owned by the Vertical or HorizontalScrollingContentView. NOTE: you should never add subviews to this directly, this should instead be handled by the addSubviews(subviews: [UIView], _ , _ ) on the instance of VerticalScrollingContentView.
   let scrollView: UIScrollView
   
   /// The delegate of the underlying scroll view.
