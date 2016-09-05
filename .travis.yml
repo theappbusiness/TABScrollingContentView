@@ -1,4 +1,5 @@
 language: objective-c
+osx_image: xcode7.3
+
 script:
-- pod install 
-- xcodebuild test -workspace TABScrollingContentView/TABScrollingContentView.xcworkspace -scheme TABScrollingContentView -sdk iphonesimulator
+- xcodebuild -workspace TABScrollingContentView.xcworkspace  -scheme TABScrollingContentView -configuration Debug -sdk iphonesimulator9.3 -destination "OS=9.3,name=iPad 2"
