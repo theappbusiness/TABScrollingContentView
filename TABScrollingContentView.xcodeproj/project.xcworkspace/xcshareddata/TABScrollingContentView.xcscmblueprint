@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E7CF100C357A3BCEDCB89C88A27DED85A39E024C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AD5AF6AEDDDD730FA80703CD514927426A013C86" : 0,
+    "E7CF100C357A3BCEDCB89C88A27DED85A39E024C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4E2703F1-1D07-4F71-9CC3-96E3B7B7FD86",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AD5AF6AEDDDD730FA80703CD514927426A013C86" : "TABSwiftLayout\/",
+    "E7CF100C357A3BCEDCB89C88A27DED85A39E024C" : "TABScrollingContentView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TABScrollingContentView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TABScrollingContentView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/theappbusiness\/TABSwiftLayout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AD5AF6AEDDDD730FA80703CD514927426A013C86"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/theappbusiness\/TABScrollingContentView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E7CF100C357A3BCEDCB89C88A27DED85A39E024C"
+    }
+  ]
+}
