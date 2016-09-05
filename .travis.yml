@@ -1,0 +1,4 @@
+language: objective-c
+script:
+- pod install 
+- xcodebuild test -workspace TABScrollingContentView/TABScrollingContentView.xcworkspace -scheme TABScrollingContentView -sdk iphonesimulator
