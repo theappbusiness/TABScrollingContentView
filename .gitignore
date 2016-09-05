@@ -1,0 +1,12 @@
+# OS X
+.DS_Store
+
+# Xcode
+build/
+xcuserdata
+profile
+DerivedData
+*.ipa
+
+# Bundler
+.bundle
