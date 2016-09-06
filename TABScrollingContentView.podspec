@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'TABScrollingContentView'
-  s.version      = '1.2'
+  s.version      = '1.2.1'
   s.platform	 = :ios, '8.0'
   s.license      = 'MIT'
   s.author       = { "The App Business" => "https://www.theappbusiness.com" }
