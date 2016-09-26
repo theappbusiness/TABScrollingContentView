@@ -1,12 +1,12 @@
 PODS:
-  - TABSwiftLayout (1.2)
+  - TABSwiftLayout (2.0.0)
 
 DEPENDENCIES:
-  - TABSwiftLayout (~> 1.2)
+  - TABSwiftLayout (~> 2.0.0)
 
 SPEC CHECKSUMS:
-  TABSwiftLayout: 7ed77ebd23f22d80851cdae45d53b8eb089f9232
+  TABSwiftLayout: 4c62a9fda1051ca87f421769cedb9f273a74f0f9
 
-PODFILE CHECKSUM: cb2edb7162fb187a0fe9d0773883268371e4ee29
+PODFILE CHECKSUM: 65bd6c6e56d85cd2cc8214f1e9c6839a95374d52
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.rc.2

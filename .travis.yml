@@ -1,5 +1,8 @@
-language: objective-c
-osx_image: xcode7.3
+language: generic
+os: 
+  - osx
+
+osx_image: xcode8
 
 script:
-- xcodebuild -workspace TABScrollingContentView.xcworkspace  -scheme TABScrollingContentView -configuration Debug -sdk iphonesimulator9.3 -destination "OS=9.3,name=iPad 2"
+- xcodebuild -workspace TABScrollingContentView.xcworkspace  -scheme TABScrollingContentView -configuration Debug -sdk iphonesimulator10.0 -destination "OS=10.0,name=iPhone 6s Plus"
