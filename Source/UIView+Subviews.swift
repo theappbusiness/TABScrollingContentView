@@ -35,13 +35,13 @@ public extension UIView {
     for subview in subviews {
       subview.translatesAutoresizingMaskIntoConstraints = false
       self.addSubview(subview)
-      addConstraints(fromSubview: subview, previousView: previousView, margins: margins, verticalSpacing: verticalSpacing)
+      addConstraints(fromSubiew: subview, previousView: previousView, margins: margins, verticalSpacing: verticalSpacing)
       previousView = subview
     }
     previousView?.pin(edge: .bottom, toEdge: .bottom, ofView: self, margin: margins.bottom)
   }
   
-  private func addConstraints(fromSubview subview: UIView, previousView: UIView?, margins: EdgeMargins, verticalSpacing: Double) {
+  private func addConstraints(fromSubiew subview: UIView, previousView: UIView?, margins: EdgeMargins, verticalSpacing: Double) {
     subview.pin(edges: .LeftAndRight, toView: self, margins: margins)
     if let previousView = previousView {
       previousView.pin(edge: .bottom, toEdge: .top, ofView: subview, margin: CGFloat(verticalSpacing))

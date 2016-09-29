@@ -35,7 +35,7 @@ enum ScrollDirection {
  *  A horizontal scrolling content view that respects the auto-layout constraints of its subviews and resizes its content view
  *  and the content size of its scrollable area accordingly.
  */
-open class HorizontalScrollingContentView: VerticalScrollingContentView {
+public class HorizontalScrollingContentView: VerticalScrollingContentView {
   override class var scrollDirection: ScrollDirection { return .horizontal }
   
   /**
@@ -46,7 +46,7 @@ open class HorizontalScrollingContentView: VerticalScrollingContentView {
    of all subviews.
    - parameter viewSpacing: The vertical spacing between each subview.
    */
-  override open func add(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
+  override public func add(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
     contentView.addHorizontal(subviews: subviews, withMargins: margins, horizontalSpacing: viewSpacing)
   }
 }
@@ -55,15 +55,15 @@ open class HorizontalScrollingContentView: VerticalScrollingContentView {
 *  A vertical scrolling content view that respects the auto-layout constraints of its subviews and resizes its content view
 *  and the content size of its scrollable area accordingly.
 */
-open class VerticalScrollingContentView: UIView {
+public class VerticalScrollingContentView: UIView {
 
   // MARK: Public properties
   
   /// The scroll view created and owned by the Vertical or HorizontalScrollingContentView. NOTE: you should never add subviews to this directly, this should instead be handled by the addSubviews(subviews: [UIView], _ , _ ) on the instance of VerticalScrollingContentView.
-  open let scrollView: UIScrollView
+  public let scrollView: UIScrollView
   
   /// The delegate of the underlying scroll view.
-  open weak var delegate: UIScrollViewDelegate? {
+  public weak var delegate: UIScrollViewDelegate? {
     get {
       return scrollView.delegate
     }
@@ -73,7 +73,7 @@ open class VerticalScrollingContentView: UIView {
   }
   
   /// The content view, to which you should add subviews. Don't add subviews directly to the scroll view.
-  open let contentView: UIView
+  public let contentView: UIView
   
   // MARK: Private properties
   
@@ -105,7 +105,7 @@ open class VerticalScrollingContentView: UIView {
    of all subviews.
    - parameter viewSpacing: The vertical spacing between each subview.
    */
-  open func add(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
+  public func add(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
     contentView.addVertical(subviews: subviews, withMargins: margins, verticalSpacing: viewSpacing)
   }
   
