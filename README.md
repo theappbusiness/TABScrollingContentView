@@ -29,7 +29,7 @@ You can also use `init?(coder:)` and `init(frame:)`.
 
 ## Populating
 
-Call the `addSubviews(subviews:)` or `addSubviews(subviews:, withMargins:, viewSpacing:)` method.
+Call the `add(subviews:)` or `add(subviews:, withMargins:, viewSpacing:)` method.
 
 This will internally add the given subviews to the underlying `contentView` of the object on which the method is invoked. Subviews are added one after the other in a vertical or horizontal fashion, with the given spacing between each. By default, the margins at the top, left, bottom, and right are all 0. And the spacing between each view is also 0 by default.
 
@@ -38,6 +38,6 @@ You can alternatively add subviews yourself. If doing so, you should add the sub
 There are also the following methods that can be used to add vertical or horizontal subviews to any type of view.
 
 ```
-addVerticalSubviews(_:withMargins:verticalSpacing:)
-addHorizontalSubviews(_:withMargins:horizontalSpacing:)
+addVertical(subviews:withMargins:verticalSpacing:)
+addHorizontal(subviews:withMargins:horizontalSpacing:)
 ```
