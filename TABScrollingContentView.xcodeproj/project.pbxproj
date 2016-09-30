@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39173A431D992C950023A28B /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39173A421D992C950023A28B /* Deprecations.swift */; };
 		3951760C1D7DB76A0077541C /* TABScrollingContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3951760B1D7DB76A0077541C /* TABScrollingContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		395176261D7DB8590077541C /* ScrollingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395176241D7DB8590077541C /* ScrollingContentView.swift */; };
-		395176271D7DB8590077541C /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395176251D7DB8590077541C /* UIView+Subviews.swift */; };
+		39F3F2051D9E7A5100BAEF8B /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F2021D9E7A5100BAEF8B /* Deprecations.swift */; };
+		39F3F2061D9E7A5100BAEF8B /* ScrollingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F2031D9E7A5100BAEF8B /* ScrollingContentView.swift */; };
+		39F3F2071D9E7A5100BAEF8B /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F2041D9E7A5100BAEF8B /* UIView+Subviews.swift */; };
 		96BA3A4032995D32B7CC1C5B /* Pods_TABScrollingContentView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463FDBCF81300B4431F40732 /* Pods_TABScrollingContentView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1367890B75B1FF7C5B54B833 /* Pods-TABScrollingContentView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABScrollingContentView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TABScrollingContentView/Pods-TABScrollingContentView.release.xcconfig"; sourceTree = "<group>"; };
 		3833D4C32F208A6C79652D0F /* Pods-TABScrollingContentView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABScrollingContentView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TABScrollingContentView/Pods-TABScrollingContentView.debug.xcconfig"; sourceTree = "<group>"; };
-		39173A421D992C950023A28B /* Deprecations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deprecations.swift; sourceTree = "<group>"; };
 		395176081D7DB76A0077541C /* TABScrollingContentView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TABScrollingContentView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3951760B1D7DB76A0077541C /* TABScrollingContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TABScrollingContentView.h; sourceTree = "<group>"; };
 		3951760D1D7DB76A0077541C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		395176241D7DB8590077541C /* ScrollingContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingContentView.swift; sourceTree = "<group>"; };
-		395176251D7DB8590077541C /* UIView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
+		39F3F2021D9E7A5100BAEF8B /* Deprecations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deprecations.swift; sourceTree = "<group>"; };
+		39F3F2031D9E7A5100BAEF8B /* ScrollingContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingContentView.swift; sourceTree = "<group>"; };
+		39F3F2041D9E7A5100BAEF8B /* UIView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
 		463FDBCF81300B4431F40732 /* Pods_TABScrollingContentView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TABScrollingContentView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,7 +43,7 @@
 			children = (
 				395176281D7DCE840077541C /* Metadata */,
 				395176091D7DB76A0077541C /* Products */,
-				395176291D7DCE8C0077541C /* Source */,
+				39F3F2011D9E7A5100BAEF8B /* Sources */,
 				521DF9EB165460FE4E62904F /* Pods */,
 				D3DD9AC080BF140227F32D2E /* Frameworks */,
 			);
@@ -66,14 +66,14 @@
 			path = Metadata;
 			sourceTree = "<group>";
 		};
-		395176291D7DCE8C0077541C /* Source */ = {
+		39F3F2011D9E7A5100BAEF8B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				395176241D7DB8590077541C /* ScrollingContentView.swift */,
-				395176251D7DB8590077541C /* UIView+Subviews.swift */,
-				39173A421D992C950023A28B /* Deprecations.swift */,
+				39F3F2021D9E7A5100BAEF8B /* Deprecations.swift */,
+				39F3F2031D9E7A5100BAEF8B /* ScrollingContentView.swift */,
+				39F3F2041D9E7A5100BAEF8B /* UIView+Subviews.swift */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		521DF9EB165460FE4E62904F /* Pods */ = {
@@ -207,9 +207,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39173A431D992C950023A28B /* Deprecations.swift in Sources */,
-				395176271D7DB8590077541C /* UIView+Subviews.swift in Sources */,
-				395176261D7DB8590077541C /* ScrollingContentView.swift in Sources */,
+				39F3F2061D9E7A5100BAEF8B /* ScrollingContentView.swift in Sources */,
+				39F3F2051D9E7A5100BAEF8B /* Deprecations.swift in Sources */,
+				39F3F2071D9E7A5100BAEF8B /* UIView+Subviews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
