@@ -11,14 +11,14 @@ import TABSwiftLayout
 
 extension View {
   
-  @available(*, deprecated:2.0.0, renamed: "addHorizontal(subviews:withMargins:horizontalSpacing:)")
+  @available(*, deprecated:2.0.0, renamed: "add(horizontalSubviews:withMargins:horizontalSpacing:)")
   public func addHorizontalSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), horizontalSpacing: Double = 0) {
-    return addHorizontal(subviews: subviews, withMargins: margins, horizontalSpacing: horizontalSpacing)
+    return add(horizontalSubviews: subviews, withMargins: margins, horizontalSpacing: horizontalSpacing)
   }
   
-  @available(*, deprecated:2.0.0, renamed: "addVertical(subviews:withMargins:verticalSpacing:)")
+  @available(*, deprecated:2.0.0, renamed: "add(verticalSubviews:withMargins:verticalSpacing:)")
   public func addVerticalSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), verticalSpacing: Double = 0) {
-    return addVertical(subviews: subviews, withMargins: margins, verticalSpacing: verticalSpacing)
+    return add(verticalSubviews: subviews, withMargins: margins, verticalSpacing: verticalSpacing)
   }
   
 }

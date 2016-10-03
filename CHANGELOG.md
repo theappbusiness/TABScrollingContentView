@@ -8,8 +8,8 @@
 ## API updates
 - Renamed TABScrollingContentView functions:
 
-	-  `addHorizontalSubviews(_:withMargins:horizontalSpacing:)` to `addHorizontal(subviews:withMargins:horizontalSpacing:)`
+	-  `addHorizontalSubviews(_:withMargins:horizontalSpacing:)` to `add(horizontalSubviews:withMargins:horizontalSpacing:)`
 
-	-  `addVerticalSubviews(_:withMargins:verticalSpacing:)` to `addVertical(subviews:withMargins:verticalSpacing:)`
+	-  `addVerticalSubviews(_:withMargins:verticalSpacing:)` to `add(verticalSubviews:withMargins:verticalSpacing:)`
 
 	-  `addSubviews(_:withMargins:viewSpacing:)` to `add(subviews:withMargins:viewSpacing:)`

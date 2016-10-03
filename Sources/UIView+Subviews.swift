@@ -30,7 +30,7 @@ public extension UIView {
   
   // MARK: - Vertical
   
-  public func addVertical(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), verticalSpacing: Double = 0) {
+  public func add(verticalSubviews subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), verticalSpacing: Double = 0) {
     var previousView: UIView? = nil
     for subview in subviews {
       subview.translatesAutoresizingMaskIntoConstraints = false
@@ -52,7 +52,7 @@ public extension UIView {
   
   // MARK: - Horizontal
   
-  public func addHorizontal(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), horizontalSpacing: Double = 0) {
+  public func add(horizontalSubviews subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), horizontalSpacing: Double = 0) {
     var previousView: UIView? = nil
     for subview in subviews {
       subview.translatesAutoresizingMaskIntoConstraints = false

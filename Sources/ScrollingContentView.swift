@@ -47,7 +47,7 @@ public class HorizontalScrollingContentView: VerticalScrollingContentView {
    - parameter viewSpacing: The vertical spacing between each subview.
    */
   override public func add(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
-    contentView.addHorizontal(subviews: subviews, withMargins: margins, horizontalSpacing: viewSpacing)
+    contentView.add(horizontalSubviews: subviews, withMargins: margins, horizontalSpacing: viewSpacing)
   }
 }
 
@@ -106,7 +106,7 @@ public class VerticalScrollingContentView: UIView {
    - parameter viewSpacing: The vertical spacing between each subview.
    */
   public func add(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
-    contentView.addVertical(subviews: subviews, withMargins: margins, verticalSpacing: viewSpacing)
+    contentView.add(verticalSubviews: subviews, withMargins: margins, verticalSpacing: viewSpacing)
   }
   
   // MARK: Private
@@ -122,15 +122,15 @@ public class VerticalScrollingContentView: UIView {
     let trailingAttribute: NSLayoutAttribute = type(of: self).scrollDirection == .vertical ? .trailing : .bottom
     
     // the content view is constrained to the top and bottom of the scroll view
-    addConstraint(toView: scrollView, targetAttribute: topAttribute, fromContentViewAttribute: topAttribute)
-    addConstraint(toView: scrollView, targetAttribute: bottomAttribute, fromContentViewAttribute: bottomAttribute)
+    addConstraint(to: scrollView, targetAttribute: topAttribute, fromContentViewAttribute: topAttribute)
+    addConstraint(to: scrollView, targetAttribute: bottomAttribute, fromContentViewAttribute: bottomAttribute)
     
     // the content view is constrained to the left and right of the view itself (not its scrollview!)
-    addConstraint(toView: self, targetAttribute: leadingAttribute, fromContentViewAttribute: leadingAttribute)
-    addConstraint(toView: self, targetAttribute: trailingAttribute, fromContentViewAttribute: trailingAttribute)
+    addConstraint(to: self, targetAttribute: leadingAttribute, fromContentViewAttribute: leadingAttribute)
+    addConstraint(to: self, targetAttribute: trailingAttribute, fromContentViewAttribute: trailingAttribute)
   }
   
-  private func addConstraint(toView targetView: UIView, targetAttribute: NSLayoutAttribute, fromContentViewAttribute sourceAttribute: NSLayoutAttribute) {
+  private func addConstraint(to targetView: UIView, targetAttribute: NSLayoutAttribute, fromContentViewAttribute sourceAttribute: NSLayoutAttribute) {
     let constraint = NSLayoutConstraint(item: contentView, attribute: sourceAttribute, relatedBy: NSLayoutRelation.equal, toItem: targetView, attribute: targetAttribute, multiplier: 1, constant: 0)
     targetView.addConstraint(constraint)
   }
@@ -138,8 +138,8 @@ public class VerticalScrollingContentView: UIView {
   // MARK: Static helpers
   
   private static func newScrollView() -> UIScrollView {
-    let scrollView = UIScrollView(frame: CGRect.zero)
-    scrollView.backgroundColor = UIColor.clear
+    let scrollView = UIScrollView(frame: .zero)
+    scrollView.backgroundColor = .clear
     scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     scrollView.translatesAutoresizingMaskIntoConstraints = false
     scrollView.alwaysBounceVertical = true
@@ -147,9 +147,9 @@ public class VerticalScrollingContentView: UIView {
   }
   
   private static func newContentView() -> UIView {
-    let contentView = UIView(frame: CGRect.zero)
+    let contentView = UIView(frame: .zero)
     contentView.translatesAutoresizingMaskIntoConstraints = false
-    contentView.backgroundColor = UIColor.clear
+    contentView.backgroundColor = .clear
     return contentView
   }
 
