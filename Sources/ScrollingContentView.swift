@@ -27,8 +27,8 @@ import UIKit
 import TABSwiftLayout
 
 enum ScrollDirection {
-  case Vertical
-  case Horizontal
+  case vertical
+  case horizontal
 }
 
 /**
@@ -36,7 +36,7 @@ enum ScrollDirection {
  *  and the content size of its scrollable area accordingly.
  */
 public class HorizontalScrollingContentView: VerticalScrollingContentView {
-  override class var scrollDirection: ScrollDirection { return .Horizontal }
+  override class var scrollDirection: ScrollDirection { return .horizontal }
   
   /**
    Adds all the given subviews to the contentView, horizontally one after the other spaced accordingly.
@@ -46,8 +46,8 @@ public class HorizontalScrollingContentView: VerticalScrollingContentView {
    of all subviews.
    - parameter viewSpacing: The vertical spacing between each subview.
    */
-  override public func addSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
-    contentView.addHorizontalSubviews(subviews, withMargins: margins, horizontalSpacing: viewSpacing)
+  override public func add(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
+    contentView.add(horizontalSubviews: subviews, withMargins: margins, horizontalSpacing: viewSpacing)
   }
 }
 
@@ -77,7 +77,7 @@ public class VerticalScrollingContentView: UIView {
   
   // MARK: Private properties
   
-  class var scrollDirection: ScrollDirection { return .Vertical }
+  class var scrollDirection: ScrollDirection { return .vertical }
   
   // MARK: - Initialization
   
@@ -105,51 +105,51 @@ public class VerticalScrollingContentView: UIView {
    of all subviews.
    - parameter viewSpacing: The vertical spacing between each subview.
    */
-  public func addSubviews(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
-    contentView.addVerticalSubviews(subviews, withMargins: margins, verticalSpacing: viewSpacing)
+  public func add(subviews: [UIView], withMargins margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
+    contentView.add(verticalSubviews: subviews, withMargins: margins, verticalSpacing: viewSpacing)
   }
   
   // MARK: Private
 
   private func setupInitialConstraints() {
     addSubview(scrollView)
-    scrollView.pin(EdgeMask.All, toView: self, margins: EdgeMargins())
+    scrollView.pin(edges: EdgeMask.All, toView: self, margins: EdgeMargins())
     scrollView.addSubview(contentView)
     
-    let topAttribute: NSLayoutAttribute = self.dynamicType.scrollDirection == .Vertical ? .Top : .Leading
-    let bottomAttribute: NSLayoutAttribute = self.dynamicType.scrollDirection == .Vertical ? .Bottom : .Trailing
-    let leadingAttribute: NSLayoutAttribute = self.dynamicType.scrollDirection == .Vertical ? .Leading : .Top
-    let trailingAttribute: NSLayoutAttribute = self.dynamicType.scrollDirection == .Vertical ? .Trailing : .Bottom
+    let topAttribute: NSLayoutAttribute = type(of: self).scrollDirection == .vertical ? .top : .leading
+    let bottomAttribute: NSLayoutAttribute = type(of: self).scrollDirection == .vertical ? .bottom : .trailing
+    let leadingAttribute: NSLayoutAttribute = type(of: self).scrollDirection == .vertical ? .leading : .top
+    let trailingAttribute: NSLayoutAttribute = type(of: self).scrollDirection == .vertical ? .trailing : .bottom
     
     // the content view is constrained to the top and bottom of the scroll view
-    addConstraintToView(scrollView, targetAttribute: topAttribute, fromContentViewAttribute: topAttribute)
-    addConstraintToView(scrollView, targetAttribute: bottomAttribute, fromContentViewAttribute: bottomAttribute)
+    addConstraint(to: scrollView, targetAttribute: topAttribute, fromContentViewAttribute: topAttribute)
+    addConstraint(to: scrollView, targetAttribute: bottomAttribute, fromContentViewAttribute: bottomAttribute)
     
     // the content view is constrained to the left and right of the view itself (not its scrollview!)
-    addConstraintToView(self, targetAttribute: leadingAttribute, fromContentViewAttribute: leadingAttribute)
-    addConstraintToView(self, targetAttribute: trailingAttribute, fromContentViewAttribute: trailingAttribute)
+    addConstraint(to: self, targetAttribute: leadingAttribute, fromContentViewAttribute: leadingAttribute)
+    addConstraint(to: self, targetAttribute: trailingAttribute, fromContentViewAttribute: trailingAttribute)
   }
   
-  private func addConstraintToView(targetView: UIView, targetAttribute: NSLayoutAttribute, fromContentViewAttribute sourceAttribute: NSLayoutAttribute) {
-    let constraint = NSLayoutConstraint(item: contentView, attribute: sourceAttribute, relatedBy: NSLayoutRelation.Equal, toItem: targetView, attribute: targetAttribute, multiplier: 1, constant: 0)
+  private func addConstraint(to targetView: UIView, targetAttribute: NSLayoutAttribute, fromContentViewAttribute sourceAttribute: NSLayoutAttribute) {
+    let constraint = NSLayoutConstraint(item: contentView, attribute: sourceAttribute, relatedBy: NSLayoutRelation.equal, toItem: targetView, attribute: targetAttribute, multiplier: 1, constant: 0)
     targetView.addConstraint(constraint)
   }
   
   // MARK: Static helpers
   
   private static func newScrollView() -> UIScrollView {
-    let scrollView = UIScrollView(frame: CGRectZero)
-    scrollView.backgroundColor = UIColor.clearColor()
-    scrollView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+    let scrollView = UIScrollView(frame: .zero)
+    scrollView.backgroundColor = .clear
+    scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     scrollView.translatesAutoresizingMaskIntoConstraints = false
     scrollView.alwaysBounceVertical = true
     return scrollView
   }
   
   private static func newContentView() -> UIView {
-    let contentView = UIView(frame: CGRectZero)
+    let contentView = UIView(frame: .zero)
     contentView.translatesAutoresizingMaskIntoConstraints = false
-    contentView.backgroundColor = UIColor.clearColor()
+    contentView.backgroundColor = .clear
     return contentView
   }
 

@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D104273C3A4DBACA8327184447317A8 /* Pods-TABScrollingContentView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D529EB38E3732CC8D025651EC716F5C2 /* Pods-TABScrollingContentView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2593421C437D09692F1934526D3BDB8E /* TABSwiftLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3327A552F8EE4B3D6F79002D0A7489CC /* TABSwiftLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25F98C57178C3D0F39965E5BA6A57EB2 /* TABSwiftLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B50641AEA7E1D098CA34D558E220E910 /* TABSwiftLayout-dummy.m */; };
+		01C7C07697F9EC836124BC35698ED891 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157512CF11188D7867C1503A344A6516 /* Layout.swift */; };
+		0C4A0D8EDDF83D6EA78D93A10E69E6BA /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E378EED9A2EE55F8D03E54B9D4C2C024 /* Deprecations.swift */; };
+		1D104273C3A4DBACA8327184447317A8 /* Pods-TABScrollingContentView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D29630478F68F2CE47D3959E431511 /* Pods-TABScrollingContentView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2593421C437D09692F1934526D3BDB8E /* TABSwiftLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1A6A1D7A2C920CA3D49DA69A33CC934 /* TABSwiftLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28704BC9CD6BCB23B6A7A5ADFD24114F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		52F67B92265F17683E383BB947CAEA8C /* Pods-TABScrollingContentView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C09B38B22D9C61F9BE210104E4C1AABC /* Pods-TABScrollingContentView-dummy.m */; };
-		9A1A79E56C1EB27E940D398506B32E45 /* LayoutDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E830180E45485F6BF99B0C128164C6 /* LayoutDefines.swift */; };
+		4E0B67C2CF86FB9AB570409DE58AC048 /* TABSwiftLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E04E39B19863B69525A773CCB5A173 /* TABSwiftLayout-dummy.m */; };
+		4EE121059117100CC42441EB70B1735A /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB0CF6E58CAD2A7EB03D14851C0006 /* Constraint.swift */; };
+		52F67B92265F17683E383BB947CAEA8C /* Pods-TABScrollingContentView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B1583713E9E69C2F08466250F4395 /* Pods-TABScrollingContentView-dummy.m */; };
+		998BF4517F8217EB04CE240DD9B711A1 /* LayoutDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70EF8DA7239C936D0FF28E38D3F9BD /* LayoutDefines.swift */; };
 		D2FDE0528E1E5C4C8C63428DC5C8D855 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		E2DCF9E81BA665577B05BE385590ED7E /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3D54C50254604242EF063A49ED2DE /* Layout.swift */; };
-		EB567037A6526CD9E014F28BA0EDC3AA /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C29DF58755264782525CBA6F515336 /* Constraint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,29 +30,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05DAE58D67EB0917276E1A15CBE0ABCA /* TABSwiftLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TABSwiftLayout.xcconfig; sourceTree = "<group>"; };
-		11EF31DEB4FCE68C5DCD9B53148C43D6 /* Pods-TABScrollingContentView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TABScrollingContentView-acknowledgements.plist"; sourceTree = "<group>"; };
-		3327A552F8EE4B3D6F79002D0A7489CC /* TABSwiftLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABSwiftLayout-umbrella.h"; sourceTree = "<group>"; };
-		3DD3D54C50254604242EF063A49ED2DE /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = TABSwiftLayout/Layout.swift; sourceTree = "<group>"; };
-		5BBA4E1B16DA916B7ADB4CBF7C819705 /* Pods-TABScrollingContentView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TABScrollingContentView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		157512CF11188D7867C1503A344A6516 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Sources/Layout.swift; sourceTree = "<group>"; };
+		1C70EF8DA7239C936D0FF28E38D3F9BD /* LayoutDefines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutDefines.swift; path = Sources/LayoutDefines.swift; sourceTree = "<group>"; };
+		2CF1F6EB4A7B604123773AA41250E772 /* Pods-TABScrollingContentView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TABScrollingContentView.debug.xcconfig"; sourceTree = "<group>"; };
+		3A9E6D4E35CE4AA1605C64A1946C218C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF14F86DB949C3F9FA2C91CA79FFC0D /* Pods-TABScrollingContentView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TABScrollingContentView-acknowledgements.plist"; sourceTree = "<group>"; };
+		4B0B1583713E9E69C2F08466250F4395 /* Pods-TABScrollingContentView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TABScrollingContentView-dummy.m"; sourceTree = "<group>"; };
+		54E44BA875D1DB39B61DC491A68D009B /* Pods-TABScrollingContentView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TABScrollingContentView.release.xcconfig"; sourceTree = "<group>"; };
+		5C130129ED9C1B7CA951166356472220 /* Pods-TABScrollingContentView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TABScrollingContentView-resources.sh"; sourceTree = "<group>"; };
 		5DCAD1123122BF1F3C71C6B40865AF70 /* Pods_TABScrollingContentView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TABScrollingContentView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		679E662383FF02A3DFE05989392BDAC3 /* Pods-TABScrollingContentView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TABScrollingContentView.modulemap"; sourceTree = "<group>"; };
-		6865331D7BF60984793DE38F39D664A1 /* Pods-TABScrollingContentView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TABScrollingContentView.release.xcconfig"; sourceTree = "<group>"; };
-		69F7BC523E80BCA9DE6A49C4D6015F5B /* TABSwiftLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABSwiftLayout-prefix.pch"; sourceTree = "<group>"; };
+		60E04E39B19863B69525A773CCB5A173 /* TABSwiftLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TABSwiftLayout-dummy.m"; sourceTree = "<group>"; };
 		6F15788BD12D030E6F66BC4E76F26488 /* TABSwiftLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TABSwiftLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77D167FF1AF64FB4C72434A40EF9F84D /* TABSwiftLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TABSwiftLayout.modulemap; sourceTree = "<group>"; };
-		7B601464EF4D0C4034EE71CD2B39CACB /* Pods-TABScrollingContentView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TABScrollingContentView-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B50641AEA7E1D098CA34D558E220E910 /* TABSwiftLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TABSwiftLayout-dummy.m"; sourceTree = "<group>"; };
-		C09B38B22D9C61F9BE210104E4C1AABC /* Pods-TABScrollingContentView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TABScrollingContentView-dummy.m"; sourceTree = "<group>"; };
-		C3E830180E45485F6BF99B0C128164C6 /* LayoutDefines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutDefines.swift; path = TABSwiftLayout/LayoutDefines.swift; sourceTree = "<group>"; };
-		CE43CDBD41C71219465C126987CD854B /* Pods-TABScrollingContentView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TABScrollingContentView.debug.xcconfig"; sourceTree = "<group>"; };
+		9EED2257EAD6FD33FF2B1FFC673C7C96 /* TABSwiftLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TABSwiftLayout.xcconfig; sourceTree = "<group>"; };
+		A7BE53BBC4ABEF31529DB939107E766B /* Pods-TABScrollingContentView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TABScrollingContentView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B1BD92BB740924D109D597C466EDA52E /* Pods-TABScrollingContentView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TABScrollingContentView.modulemap"; sourceTree = "<group>"; };
+		BCDB0CF6E58CAD2A7EB03D14851C0006 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Sources/Constraint.swift; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D045CF35FB53908CC52EEAFD0EFCDC23 /* Pods-TABScrollingContentView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TABScrollingContentView-frameworks.sh"; sourceTree = "<group>"; };
-		D529EB38E3732CC8D025651EC716F5C2 /* Pods-TABScrollingContentView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TABScrollingContentView-umbrella.h"; sourceTree = "<group>"; };
-		D5C29DF58755264782525CBA6F515336 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = TABSwiftLayout/Constraint.swift; sourceTree = "<group>"; };
-		E6FA0A09EAC5370EEA69F910CBB546E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF0922BE0F3A1B0FE7C86CE83BAE873A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFEF03A85E173857D3BFAB6C43C0EF25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D570067C1C1FFC2CB37367E4B10C41D6 /* TABSwiftLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABSwiftLayout-prefix.pch"; sourceTree = "<group>"; };
+		E1D29630478F68F2CE47D3959E431511 /* Pods-TABScrollingContentView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TABScrollingContentView-umbrella.h"; sourceTree = "<group>"; };
+		E378EED9A2EE55F8D03E54B9D4C2C024 /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Sources/Deprecations.swift; sourceTree = "<group>"; };
+		EB932984F144EC564CEE9C7BF57580F3 /* TABSwiftLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TABSwiftLayout.modulemap; sourceTree = "<group>"; };
+		F1A6A1D7A2C920CA3D49DA69A33CC934 /* TABSwiftLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABSwiftLayout-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,15 +75,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E893EA3A129D1EA832F99A10685F57C /* Support Files */ = {
+		03793AE59C1A9FA547E3E972CE5ADFBC /* Pods-TABScrollingContentView */ = {
 			isa = PBXGroup;
 			children = (
-				E6FA0A09EAC5370EEA69F910CBB546E0 /* Info.plist */,
-				77D167FF1AF64FB4C72434A40EF9F84D /* TABSwiftLayout.modulemap */,
-				05DAE58D67EB0917276E1A15CBE0ABCA /* TABSwiftLayout.xcconfig */,
-				B50641AEA7E1D098CA34D558E220E910 /* TABSwiftLayout-dummy.m */,
-				69F7BC523E80BCA9DE6A49C4D6015F5B /* TABSwiftLayout-prefix.pch */,
-				3327A552F8EE4B3D6F79002D0A7489CC /* TABSwiftLayout-umbrella.h */,
+				CFEF03A85E173857D3BFAB6C43C0EF25 /* Info.plist */,
+				B1BD92BB740924D109D597C466EDA52E /* Pods-TABScrollingContentView.modulemap */,
+				A7BE53BBC4ABEF31529DB939107E766B /* Pods-TABScrollingContentView-acknowledgements.markdown */,
+				3EF14F86DB949C3F9FA2C91CA79FFC0D /* Pods-TABScrollingContentView-acknowledgements.plist */,
+				4B0B1583713E9E69C2F08466250F4395 /* Pods-TABScrollingContentView-dummy.m */,
+				5C130129ED9C1B7CA951166356472220 /* Pods-TABScrollingContentView-resources.sh */,
+				E1D29630478F68F2CE47D3959E431511 /* Pods-TABScrollingContentView-umbrella.h */,
+				2CF1F6EB4A7B604123773AA41250E772 /* Pods-TABScrollingContentView.debug.xcconfig */,
+				54E44BA875D1DB39B61DC491A68D009B /* Pods-TABScrollingContentView.release.xcconfig */,
+			);
+			name = "Pods-TABScrollingContentView";
+			path = "Target Support Files/Pods-TABScrollingContentView";
+			sourceTree = "<group>";
+		};
+		07886B706EA1C0F123FE668E809C1BD2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A9E6D4E35CE4AA1605C64A1946C218C /* Info.plist */,
+				EB932984F144EC564CEE9C7BF57580F3 /* TABSwiftLayout.modulemap */,
+				9EED2257EAD6FD33FF2B1FFC673C7C96 /* TABSwiftLayout.xcconfig */,
+				60E04E39B19863B69525A773CCB5A173 /* TABSwiftLayout-dummy.m */,
+				D570067C1C1FFC2CB37367E4B10C41D6 /* TABSwiftLayout-prefix.pch */,
+				F1A6A1D7A2C920CA3D49DA69A33CC934 /* TABSwiftLayout-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TABSwiftLayout";
@@ -97,22 +115,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1C4B8142BAD3661C4F6B455DBBE30FA5 /* Pods-TABScrollingContentView */ = {
+		2B419D96A26CAB7F7D70F3181BF13DAE /* TABSwiftLayout */ = {
 			isa = PBXGroup;
 			children = (
-				FF0922BE0F3A1B0FE7C86CE83BAE873A /* Info.plist */,
-				679E662383FF02A3DFE05989392BDAC3 /* Pods-TABScrollingContentView.modulemap */,
-				5BBA4E1B16DA916B7ADB4CBF7C819705 /* Pods-TABScrollingContentView-acknowledgements.markdown */,
-				11EF31DEB4FCE68C5DCD9B53148C43D6 /* Pods-TABScrollingContentView-acknowledgements.plist */,
-				C09B38B22D9C61F9BE210104E4C1AABC /* Pods-TABScrollingContentView-dummy.m */,
-				D045CF35FB53908CC52EEAFD0EFCDC23 /* Pods-TABScrollingContentView-frameworks.sh */,
-				7B601464EF4D0C4034EE71CD2B39CACB /* Pods-TABScrollingContentView-resources.sh */,
-				D529EB38E3732CC8D025651EC716F5C2 /* Pods-TABScrollingContentView-umbrella.h */,
-				CE43CDBD41C71219465C126987CD854B /* Pods-TABScrollingContentView.debug.xcconfig */,
-				6865331D7BF60984793DE38F39D664A1 /* Pods-TABScrollingContentView.release.xcconfig */,
+				BCDB0CF6E58CAD2A7EB03D14851C0006 /* Constraint.swift */,
+				E378EED9A2EE55F8D03E54B9D4C2C024 /* Deprecations.swift */,
+				157512CF11188D7867C1503A344A6516 /* Layout.swift */,
+				1C70EF8DA7239C936D0FF28E38D3F9BD /* LayoutDefines.swift */,
+				07886B706EA1C0F123FE668E809C1BD2 /* Support Files */,
 			);
-			name = "Pods-TABScrollingContentView";
-			path = "Target Support Files/Pods-TABScrollingContentView";
+			path = TABSwiftLayout;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -128,29 +140,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				862F46B98275ACE20EFB6CD58C807964 /* Pods */,
+				F019211B4F824B410907FA526F1C93B3 /* Pods */,
 				1B36173E4F678899EEA87A2B5316B21B /* Products */,
-				FAE10D620E6812F6572132952E0C3376 /* Targets Support Files */,
+				BC99EBD5E7E707CE2008D3E69BA3E022 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		862F46B98275ACE20EFB6CD58C807964 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BAED34CFE3554F39AB8774A3AA23A57B /* TABSwiftLayout */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		BAED34CFE3554F39AB8774A3AA23A57B /* TABSwiftLayout */ = {
-			isa = PBXGroup;
-			children = (
-				D5C29DF58755264782525CBA6F515336 /* Constraint.swift */,
-				3DD3D54C50254604242EF063A49ED2DE /* Layout.swift */,
-				C3E830180E45485F6BF99B0C128164C6 /* LayoutDefines.swift */,
-				0E893EA3A129D1EA832F99A10685F57C /* Support Files */,
-			);
-			path = TABSwiftLayout;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -161,12 +154,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FAE10D620E6812F6572132952E0C3376 /* Targets Support Files */ = {
+		BC99EBD5E7E707CE2008D3E69BA3E022 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1C4B8142BAD3661C4F6B455DBBE30FA5 /* Pods-TABScrollingContentView */,
+				03793AE59C1A9FA547E3E972CE5ADFBC /* Pods-TABScrollingContentView */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F019211B4F824B410907FA526F1C93B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B419D96A26CAB7F7D70F3181BF13DAE /* TABSwiftLayout */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF652C293029D5B4CE3FAAF33F2CBC76 /* Build configuration list for PBXNativeTarget "TABSwiftLayout" */;
 			buildPhases = (
-				8944B7042E52C088717AE9D44EB8088F /* Sources */,
+				52804653D4F06CA9A23EFDF00174FBBC /* Sources */,
 				C519A3734B7ED2E41E40064968D0FAB2 /* Frameworks */,
 				6559B94CB82EB6C0C25EE58AE38AFD13 /* Headers */,
 			);
@@ -262,14 +263,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8944B7042E52C088717AE9D44EB8088F /* Sources */ = {
+		52804653D4F06CA9A23EFDF00174FBBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB567037A6526CD9E014F28BA0EDC3AA /* Constraint.swift in Sources */,
-				E2DCF9E81BA665577B05BE385590ED7E /* Layout.swift in Sources */,
-				9A1A79E56C1EB27E940D398506B32E45 /* LayoutDefines.swift in Sources */,
-				25F98C57178C3D0F39965E5BA6A57EB2 /* TABSwiftLayout-dummy.m in Sources */,
+				4EE121059117100CC42441EB70B1735A /* Constraint.swift in Sources */,
+				0C4A0D8EDDF83D6EA78D93A10E69E6BA /* Deprecations.swift in Sources */,
+				01C7C07697F9EC836124BC35698ED891 /* Layout.swift in Sources */,
+				998BF4517F8217EB04CE240DD9B711A1 /* LayoutDefines.swift in Sources */,
+				4E0B67C2CF86FB9AB570409DE58AC048 /* TABSwiftLayout-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +287,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -303,44 +305,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -358,18 +323,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		9F4E480FE05DE90E6354012A797C3BA4 /* Release */ = {
+		2CE7C2A5ECFA26315EE0B7FC14F96858 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05DAE58D67EB0917276E1A15CBE0ABCA /* TABSwiftLayout.xcconfig */;
+			baseConfigurationReference = 9EED2257EAD6FD33FF2B1FFC673C7C96 /* TABSwiftLayout.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -388,17 +356,20 @@
 				PRODUCT_NAME = TABSwiftLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		B2668A094133990DF961F91D62110591 /* Debug */ = {
+		2F38B9B9B4228BDE19CFF263CFE8842B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05DAE58D67EB0917276E1A15CBE0ABCA /* TABSwiftLayout.xcconfig */;
+			baseConfigurationReference = 9EED2257EAD6FD33FF2B1FFC673C7C96 /* TABSwiftLayout.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -418,17 +389,95 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		C6DAD80ADA8B789F4892481AF0B1632A /* Debug */ = {
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE43CDBD41C71219465C126987CD854B /* Pods-TABScrollingContentView.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53C60929123397F0DA71182524F72298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E44BA875D1DB39B61DC491A68D009B /* Pods-TABScrollingContentView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TABScrollingContentView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TABScrollingContentView/Pods-TABScrollingContentView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TABScrollingContentView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8FFCF2C22284B2C29846DBDBFC188819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CF1F6EB4A7B604123773AA41250E772 /* Pods-TABScrollingContentView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -439,7 +488,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-TABScrollingContentView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TABScrollingContentView/Pods-TABScrollingContentView.modulemap";
@@ -457,39 +506,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		FA8C3CAD3AA726EAE8265827D8C85487 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6865331D7BF60984793DE38F39D664A1 /* Pods-TABScrollingContentView.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TABScrollingContentView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TABScrollingContentView/Pods-TABScrollingContentView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TABScrollingContentView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -497,8 +513,8 @@
 		2D8A950B52167E005183AA51E9A639C8 /* Build configuration list for PBXNativeTarget "Pods-TABScrollingContentView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6DAD80ADA8B789F4892481AF0B1632A /* Debug */,
-				FA8C3CAD3AA726EAE8265827D8C85487 /* Release */,
+				8FFCF2C22284B2C29846DBDBFC188819 /* Debug */,
+				53C60929123397F0DA71182524F72298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -506,8 +522,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
-				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -515,8 +531,8 @@
 		DF652C293029D5B4CE3FAAF33F2CBC76 /* Build configuration list for PBXNativeTarget "TABSwiftLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2668A094133990DF961F91D62110591 /* Debug */,
-				9F4E480FE05DE90E6354012A797C3BA4 /* Release */,
+				2F38B9B9B4228BDE19CFF263CFE8842B /* Debug */,
+				2CE7C2A5ECFA26315EE0B7FC14F96858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

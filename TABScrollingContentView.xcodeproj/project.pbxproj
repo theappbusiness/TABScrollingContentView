@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3951760C1D7DB76A0077541C /* TABScrollingContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3951760B1D7DB76A0077541C /* TABScrollingContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		395176261D7DB8590077541C /* ScrollingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395176241D7DB8590077541C /* ScrollingContentView.swift */; };
-		395176271D7DB8590077541C /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395176251D7DB8590077541C /* UIView+Subviews.swift */; };
-		ACBE072C6EC581C5F2733F19 /* Pods_TABScrollingContentView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D6B16A781A58BB85079C64 /* Pods_TABScrollingContentView.framework */; };
+		39F3F2051D9E7A5100BAEF8B /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F2021D9E7A5100BAEF8B /* Deprecations.swift */; };
+		39F3F2061D9E7A5100BAEF8B /* ScrollingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F2031D9E7A5100BAEF8B /* ScrollingContentView.swift */; };
+		39F3F2071D9E7A5100BAEF8B /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F2041D9E7A5100BAEF8B /* UIView+Subviews.swift */; };
+		96BA3A4032995D32B7CC1C5B /* Pods_TABScrollingContentView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463FDBCF81300B4431F40732 /* Pods_TABScrollingContentView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1367890B75B1FF7C5B54B833 /* Pods-TABScrollingContentView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABScrollingContentView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TABScrollingContentView/Pods-TABScrollingContentView.release.xcconfig"; sourceTree = "<group>"; };
+		3833D4C32F208A6C79652D0F /* Pods-TABScrollingContentView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABScrollingContentView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TABScrollingContentView/Pods-TABScrollingContentView.debug.xcconfig"; sourceTree = "<group>"; };
 		395176081D7DB76A0077541C /* TABScrollingContentView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TABScrollingContentView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3951760B1D7DB76A0077541C /* TABScrollingContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TABScrollingContentView.h; sourceTree = "<group>"; };
 		3951760D1D7DB76A0077541C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		395176241D7DB8590077541C /* ScrollingContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingContentView.swift; sourceTree = "<group>"; };
-		395176251D7DB8590077541C /* UIView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
-		729E119E0D684F169590264F /* Pods-TABScrollingContentView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABScrollingContentView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TABScrollingContentView/Pods-TABScrollingContentView.debug.xcconfig"; sourceTree = "<group>"; };
-		A7B4BB6E2E3DDD7A3898F194 /* Pods-TABScrollingContentView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABScrollingContentView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TABScrollingContentView/Pods-TABScrollingContentView.release.xcconfig"; sourceTree = "<group>"; };
-		C2D6B16A781A58BB85079C64 /* Pods_TABScrollingContentView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TABScrollingContentView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39F3F2021D9E7A5100BAEF8B /* Deprecations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deprecations.swift; sourceTree = "<group>"; };
+		39F3F2031D9E7A5100BAEF8B /* ScrollingContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingContentView.swift; sourceTree = "<group>"; };
+		39F3F2041D9E7A5100BAEF8B /* UIView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
+		463FDBCF81300B4431F40732 /* Pods_TABScrollingContentView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TABScrollingContentView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACBE072C6EC581C5F2733F19 /* Pods_TABScrollingContentView.framework in Frameworks */,
+				96BA3A4032995D32B7CC1C5B /* Pods_TABScrollingContentView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,11 +41,11 @@
 		395175FE1D7DB76A0077541C = {
 			isa = PBXGroup;
 			children = (
-				82655AF5FD29299C9BEDC38A /* Frameworks */,
 				395176281D7DCE840077541C /* Metadata */,
-				C4C0E48D8D6A62D3E95FB57B /* Pods */,
 				395176091D7DB76A0077541C /* Products */,
-				395176291D7DCE8C0077541C /* Source */,
+				39F3F2011D9E7A5100BAEF8B /* Sources */,
+				521DF9EB165460FE4E62904F /* Pods */,
+				D3DD9AC080BF140227F32D2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,30 +66,31 @@
 			path = Metadata;
 			sourceTree = "<group>";
 		};
-		395176291D7DCE8C0077541C /* Source */ = {
+		39F3F2011D9E7A5100BAEF8B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				395176241D7DB8590077541C /* ScrollingContentView.swift */,
-				395176251D7DB8590077541C /* UIView+Subviews.swift */,
+				39F3F2021D9E7A5100BAEF8B /* Deprecations.swift */,
+				39F3F2031D9E7A5100BAEF8B /* ScrollingContentView.swift */,
+				39F3F2041D9E7A5100BAEF8B /* UIView+Subviews.swift */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		82655AF5FD29299C9BEDC38A /* Frameworks */ = {
+		521DF9EB165460FE4E62904F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C2D6B16A781A58BB85079C64 /* Pods_TABScrollingContentView.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C4C0E48D8D6A62D3E95FB57B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				729E119E0D684F169590264F /* Pods-TABScrollingContentView.debug.xcconfig */,
-				A7B4BB6E2E3DDD7A3898F194 /* Pods-TABScrollingContentView.release.xcconfig */,
+				3833D4C32F208A6C79652D0F /* Pods-TABScrollingContentView.debug.xcconfig */,
+				1367890B75B1FF7C5B54B833 /* Pods-TABScrollingContentView.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3DD9AC080BF140227F32D2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				463FDBCF81300B4431F40732 /* Pods_TABScrollingContentView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,12 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 395176101D7DB76A0077541C /* Build configuration list for PBXNativeTarget "TABScrollingContentView" */;
 			buildPhases = (
-				D3F00FEAD576241549629625 /* [CP] Check Pods Manifest.lock */,
+				7B23968D74857363784E4A91 /* [CP] Check Pods Manifest.lock */,
 				395176031D7DB76A0077541C /* Sources */,
 				395176041D7DB76A0077541C /* Frameworks */,
 				395176051D7DB76A0077541C /* Headers */,
 				395176061D7DB76A0077541C /* Resources */,
-				48A00E71ADB01FD46055519D /* [CP] Copy Pods Resources */,
+				83F29892B59FAC724EBBDA2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +133,12 @@
 		395175FF1D7DB76A0077541C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = TheAppBusiness;
 				TargetAttributes = {
 					395176071D7DB76A0077541C = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -166,7 +170,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		48A00E71ADB01FD46055519D /* [CP] Copy Pods Resources */ = {
+		7B23968D74857363784E4A91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83F29892B59FAC724EBBDA2A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -181,21 +200,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TABScrollingContentView/Pods-TABScrollingContentView-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3F00FEAD576241549629625 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -203,8 +207,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				395176271D7DB8590077541C /* UIView+Subviews.swift in Sources */,
-				395176261D7DB8590077541C /* ScrollingContentView.swift in Sources */,
+				39F3F2061D9E7A5100BAEF8B /* ScrollingContentView.swift in Sources */,
+				39F3F2051D9E7A5100BAEF8B /* Deprecations.swift in Sources */,
+				39F3F2071D9E7A5100BAEF8B /* UIView+Subviews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,8 +230,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -275,8 +282,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -297,6 +306,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -306,9 +316,10 @@
 		};
 		395176111D7DB76A0077541C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 729E119E0D684F169590264F /* Pods-TABScrollingContentView.debug.xcconfig */;
+			baseConfigurationReference = 3833D4C32F208A6C79652D0F /* Pods-TABScrollingContentView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,14 +331,16 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		395176121D7DB76A0077541C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7B4BB6E2E3DDD7A3898F194 /* Pods-TABScrollingContentView.release.xcconfig */;
+			baseConfigurationReference = 1367890B75B1FF7C5B54B833 /* Pods-TABScrollingContentView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -338,6 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TheAppBusiness.TABScrollingContentView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
