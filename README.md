@@ -38,6 +38,6 @@ You can alternatively add subviews yourself. If doing so, you should add the sub
 There are also the following methods that can be used to add vertical or horizontal subviews to any type of view.
 
 ```
-addVertical(subviews:withMargins:verticalSpacing:)
-addHorizontal(subviews:withMargins:horizontalSpacing:)
+add(verticalSubviews:withMargins:verticalSpacing:)
+add(horizontalSubviews:withMargins:horizontalSpacing:)
 ```
