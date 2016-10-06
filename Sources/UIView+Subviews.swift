@@ -42,7 +42,7 @@ public extension UIView {
   }
   
   private func addConstraints(fromSubiew subview: UIView, previousView: UIView?, margins: EdgeMargins, verticalSpacing: Double) {
-    subview.pin(edges: .LeftAndRight, toView: self, margins: margins)
+    subview.pin(edges: .leftAndRight, toView: self, margins: margins)
     if let previousView = previousView {
       previousView.pin(edge: .bottom, toEdge: .top, ofView: subview, margin: CGFloat(verticalSpacing))
     } else {
@@ -64,7 +64,7 @@ public extension UIView {
   }
   
   private func addConstraints(fromSubview subview: UIView, toView previousView: UIView?, margins: EdgeMargins, horizontalSpacing: Double) {
-    subview.pin(edges: .TopAndBottom, toView: self, margins: margins)
+    subview.pin(edges: .topAndBottom, toView: self, margins: margins)
     if let previousView = previousView {
       previousView.pin(edge: .right, toEdge: .left, ofView: subview, margin: CGFloat(horizontalSpacing))
     } else {

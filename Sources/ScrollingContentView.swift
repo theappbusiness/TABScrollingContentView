@@ -113,7 +113,7 @@ public class VerticalScrollingContentView: UIView {
 
   private func setupInitialConstraints() {
     addSubview(scrollView)
-    scrollView.pin(edges: EdgeMask.All, toView: self, margins: EdgeMargins())
+    scrollView.pin(edges: .all, toView: self, margins: EdgeMargins())
     scrollView.addSubview(contentView)
     
     let topAttribute: NSLayoutAttribute = type(of: self).scrollDirection == .vertical ? .top : .leading

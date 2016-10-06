@@ -1,11 +1,11 @@
 PODS:
-  - TABSwiftLayout (2.0.0)
+  - TABSwiftLayout (2.0.1)
 
 DEPENDENCIES:
   - TABSwiftLayout (~> 2.0.0)
 
 SPEC CHECKSUMS:
-  TABSwiftLayout: 4c62a9fda1051ca87f421769cedb9f273a74f0f9
+  TABSwiftLayout: 610d538faaebf0e969dbd196f61a8fd26b46c93c
 
 PODFILE CHECKSUM: 65bd6c6e56d85cd2cc8214f1e9c6839a95374d52
 
