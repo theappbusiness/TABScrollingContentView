@@ -12,7 +12,6 @@
 		39F3F2061D9E7A5100BAEF8B /* ScrollingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F2031D9E7A5100BAEF8B /* ScrollingContentView.swift */; };
 		39F3F2071D9E7A5100BAEF8B /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F2041D9E7A5100BAEF8B /* UIView+Subviews.swift */; };
 		96BA3A4032995D32B7CC1C5B /* Pods_TABScrollingContentView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463FDBCF81300B4431F40732 /* Pods_TABScrollingContentView.framework */; };
-		C33E70521E5B51AF00C6568A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C33E70501E5B51AF00C6568A /* Info.plist */; };
 		C33E70541E5B53AD00C6568A /* TABScrollingContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E70511E5B51AF00C6568A /* TABScrollingContentViewTests.swift */; };
 		C345DE4D1E5B42FB00AC5DC5 /* TABScrollingContentView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395176081D7DB76A0077541C /* TABScrollingContentView.framework */; };
 		ED8D332846DE68F486963A48 /* Pods_TABScrollingContentView_TABScrollingContentViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5757390BE9DD95EBC89F8E6F /* Pods_TABScrollingContentView_TABScrollingContentViewTests.framework */; };
@@ -251,7 +250,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C33E70521E5B51AF00C6568A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
