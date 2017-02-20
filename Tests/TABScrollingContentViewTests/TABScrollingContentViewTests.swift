@@ -24,22 +24,22 @@ class TABScrollingContentViewTests: XCTestCase {
   }
   
   func test_removingAllSubviews() {
-    XCTAssertEqual(scrollingContentView.contentView.subviews.count, 0)
+    XCTAssertEqual(scrollingContentView.contentView.subviews, [])
     let views = createViews()
     scrollingContentView.add(subviews: views)
-    XCTAssertEqual(views.count, scrollingContentView.contentView.subviews.count)
+    XCTAssertEqual(views, scrollingContentView.contentView.subviews)
     scrollingContentView.removeAllSubviews()
-    XCTAssertEqual(scrollingContentView.contentView.subviews.count, 0)
+    XCTAssertEqual(scrollingContentView.contentView.subviews, [])
   }
   
   func test_replacingAllSubviews() {
-    XCTAssertEqual(scrollingContentView.contentView.subviews.count, 0)
+    XCTAssertEqual(scrollingContentView.contentView.subviews, [])
     let views = createViews()
     scrollingContentView.add(subviews: views)
-    XCTAssertEqual(views.count, scrollingContentView.contentView.subviews.count)
+    XCTAssertEqual(views, scrollingContentView.contentView.subviews)
     let newViews = createViews(2)
     scrollingContentView.replaceSubviews(with: newViews)
-    XCTAssertEqual(scrollingContentView.contentView.subviews.count, newViews.count)
+    XCTAssertEqual(scrollingContentView.contentView.subviews, newViews)
   }
   
   private func createViews(_ count: Int = 10) -> [UIView] {
