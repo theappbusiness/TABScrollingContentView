@@ -11,7 +11,7 @@ import XCTest
 
 class TABScrollingContentViewTests: XCTestCase {
   
-  var scrollingContentView: VerticalScrollingContentView?
+  var scrollingContentView: VerticalScrollingContentView!
   
   override func setUp() {
     super.setUp()
@@ -24,22 +24,22 @@ class TABScrollingContentViewTests: XCTestCase {
   }
   
   func test_removingAllSubviews() {
-    XCTAssertEqual(scrollingContentView?.contentView.subviews.count, 0)
+    XCTAssertEqual(scrollingContentView.contentView.subviews.count, 0)
     let views = createViews()
-    scrollingContentView?.add(subviews: views)
-    XCTAssertEqual(views.count, scrollingContentView?.contentView.subviews.count)
-    scrollingContentView?.removeAllSubviews()
-    XCTAssertEqual(scrollingContentView?.contentView.subviews.count, 0)
+    scrollingContentView.add(subviews: views)
+    XCTAssertEqual(views.count, scrollingContentView.contentView.subviews.count)
+    scrollingContentView.removeAllSubviews()
+    XCTAssertEqual(scrollingContentView.contentView.subviews.count, 0)
   }
   
   func test_replacingAllSubviews() {
-    XCTAssertEqual(scrollingContentView?.contentView.subviews.count, 0)
+    XCTAssertEqual(scrollingContentView.contentView.subviews.count, 0)
     let views = createViews()
-    scrollingContentView?.add(subviews: views)
-    XCTAssertEqual(views.count, scrollingContentView?.contentView.subviews.count)
+    scrollingContentView.add(subviews: views)
+    XCTAssertEqual(views.count, scrollingContentView.contentView.subviews.count)
     let newViews = createViews(2)
-    scrollingContentView?.replaceSubviews(with: newViews)
-    XCTAssertEqual(scrollingContentView?.contentView.subviews.count, newViews.count)
+    scrollingContentView.replaceSubviews(with: newViews)
+    XCTAssertEqual(scrollingContentView.contentView.subviews.count, newViews.count)
   }
   
   private func createViews(_ count: Int = 10) -> [UIView] {
