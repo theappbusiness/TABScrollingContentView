@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_TABScrollingContentView_TABScrollingContentViewTests : NSObject
+@end
+@implementation PodsDummy_Pods_TABScrollingContentView_TABScrollingContentViewTests
+@end

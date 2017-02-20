@@ -109,6 +109,23 @@ public class VerticalScrollingContentView: UIView {
     contentView.add(verticalSubviews: subviews, withMargins: margins, verticalSpacing: viewSpacing)
   }
   
+  /// Removes all subviews from the `contentView`.
+  public func removeAllSubviews() {
+    contentView.subviews.forEach { $0.removeFromSuperview() }
+  }
+  
+  /// Removes any existing subviews from the `contentView` and replaces them with the provided subviews, 
+  /// vertically one after the other spaced accordingly.
+  ///
+  /// - Parameters:
+  ///   - subviews: The views to add as subviews of the `contentView`, replacing any existing subviews.
+  ///   - margins: The margins for the top of the first subview, the bottom of the last, and left/right of all subviews. Defaults to 0 for all edges.
+  ///   - viewSpacing: The vertical spacing between each subview.
+  public func replaceSubviews(with subviews: [UIView], margins: EdgeMargins = EdgeMargins(), viewSpacing: Double = 0) {
+    removeAllSubviews()
+    add(subviews: subviews, withMargins: margins, viewSpacing: viewSpacing)
+  }
+  
   // MARK: Private
 
   private func setupInitialConstraints() {

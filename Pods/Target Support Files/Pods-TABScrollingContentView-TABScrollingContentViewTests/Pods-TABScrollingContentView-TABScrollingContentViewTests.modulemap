@@ -1,0 +1,6 @@
+framework module Pods_TABScrollingContentView_TABScrollingContentViewTests {
+  umbrella header "Pods-TABScrollingContentView-TABScrollingContentViewTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
