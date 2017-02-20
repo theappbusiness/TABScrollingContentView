@@ -12,7 +12,8 @@
 		39F3F2061D9E7A5100BAEF8B /* ScrollingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F2031D9E7A5100BAEF8B /* ScrollingContentView.swift */; };
 		39F3F2071D9E7A5100BAEF8B /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F2041D9E7A5100BAEF8B /* UIView+Subviews.swift */; };
 		96BA3A4032995D32B7CC1C5B /* Pods_TABScrollingContentView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463FDBCF81300B4431F40732 /* Pods_TABScrollingContentView.framework */; };
-		C33E704D1E5B486300C6568A /* TABScrollingContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D07D1A1E5B403A002B555E /* TABScrollingContentViewTests.swift */; };
+		C33E70521E5B51AF00C6568A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C33E70501E5B51AF00C6568A /* Info.plist */; };
+		C33E70531E5B51AF00C6568A /* TABScrollingContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E70511E5B51AF00C6568A /* TABScrollingContentViewTests.swift */; };
 		C345DE4D1E5B42FB00AC5DC5 /* TABScrollingContentView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395176081D7DB76A0077541C /* TABScrollingContentView.framework */; };
 		ED8D332846DE68F486963A48 /* Pods_TABScrollingContentView_TABScrollingContentViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5757390BE9DD95EBC89F8E6F /* Pods_TABScrollingContentView_TABScrollingContentViewTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,9 +41,9 @@
 		463FDBCF81300B4431F40732 /* Pods_TABScrollingContentView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TABScrollingContentView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5757390BE9DD95EBC89F8E6F /* Pods_TABScrollingContentView_TABScrollingContentViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TABScrollingContentView_TABScrollingContentViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67033BDB727112D64756F667 /* Pods-TABScrollingContentView-TABScrollingContentViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABScrollingContentView-TABScrollingContentViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TABScrollingContentView-TABScrollingContentViewTests/Pods-TABScrollingContentView-TABScrollingContentViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C33E70501E5B51AF00C6568A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C33E70511E5B51AF00C6568A /* TABScrollingContentViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TABScrollingContentViewTests.swift; sourceTree = "<group>"; };
 		C345DE481E5B42FB00AC5DC5 /* TABScrollingContentViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TABScrollingContentViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3D07D1A1E5B403A002B555E /* TABScrollingContentViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TABScrollingContentViewTests.swift; sourceTree = "<group>"; };
-		C3D07D1C1E5B403A002B555E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				395176281D7DCE840077541C /* Metadata */,
-				C3D07D191E5B403A002B555E /* TABScrollingContentViewTests */,
+				C33E704E1E5B518400C6568A /* Tests */,
 				395176091D7DB76A0077541C /* Products */,
 				39F3F2011D9E7A5100BAEF8B /* Sources */,
 				521DF9EB165460FE4E62904F /* Pods */,
@@ -117,13 +118,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C3D07D191E5B403A002B555E /* TABScrollingContentViewTests */ = {
+		C33E704E1E5B518400C6568A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				C3D07D1A1E5B403A002B555E /* TABScrollingContentViewTests.swift */,
-				C3D07D1C1E5B403A002B555E /* Info.plist */,
+				C33E704F1E5B51AF00C6568A /* TABScrollingContentViewTests */,
 			);
-			path = TABScrollingContentViewTests;
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		C33E704F1E5B51AF00C6568A /* TABScrollingContentViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				C33E70501E5B51AF00C6568A /* Info.plist */,
+				C33E70511E5B51AF00C6568A /* TABScrollingContentViewTests.swift */,
+			);
+			name = TABScrollingContentViewTests;
+			path = Tests/TABScrollingContentViewTests;
 			sourceTree = "<group>";
 		};
 		D3DD9AC080BF140227F32D2E /* Frameworks */ = {
@@ -241,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33E70521E5B51AF00C6568A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C33E704D1E5B486300C6568A /* TABScrollingContentViewTests.swift in Sources */,
+				C33E70531E5B51AF00C6568A /* TABScrollingContentViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +510,7 @@
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = VG9R2N57GC;
-				INFOPLIST_FILE = TABScrollingContentViewTests/Info.plist;
+				INFOPLIST_FILE = Tests/TABScrollingContentViewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappbusiness.TABScrollingContentViewTests;
@@ -515,7 +526,7 @@
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = VG9R2N57GC;
-				INFOPLIST_FILE = TABScrollingContentViewTests/Info.plist;
+				INFOPLIST_FILE = Tests/TABScrollingContentViewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappbusiness.TABScrollingContentViewTests;
